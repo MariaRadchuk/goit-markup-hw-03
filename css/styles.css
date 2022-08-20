@@ -93,10 +93,14 @@ button {
 /* шапка сайта */
 .page-header{
     /* background-color: aquamarine; */
-    border: 1px solid var(--line-header);
+    border-bottom: 1px solid var(--line-header);
     border-top: 0;
     border-left: 0;
     border-right: 0;
+}
+
+.header-nav {
+    display: flex;
 }
 
 .page-nav {
@@ -135,6 +139,7 @@ button {
 
 .site-nav .link {
     color: var(--title-text);
+    display: inline-block;
 }
 
 .site-nav .link:hover, 
@@ -153,13 +158,15 @@ button {
     letter-spacing: 0.02em;
     display: flex;
     column-gap: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
 } 
 
 
 
 /* auth-nav */
+.site-email {
+    margin-right: 50px;
+}
+
 .contact {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -180,14 +187,15 @@ button {
     letter-spacing: 0.02em; 
     display: flex;
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
 } 
 
 .email {
-    margin-right: 50px;
+    display: inline-block;
 }
 
+.phone {
+    display: inline-block;
+}
 
 /* герой */
 .hero{
@@ -244,6 +252,7 @@ button {
 
 .title-width {
     width: 270px;
+    /* padding-top: ; */
 }
 
 .title-text {
@@ -253,26 +262,6 @@ button {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-.caption {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: var(--title-text)
-} 
-
-.caption-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    margin-bottom: 30px;
-    /* margin-bottom: 0; */
-}
-
 
 /* features */
 .feature-list {
@@ -292,9 +281,28 @@ button {
 }
 
 /* наша команда */
+.caption {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--title-text)
+}
+
+.caption-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
 
 .section-work {
     background-color: var(--bcg-color-button);
+}
+
+.our-command {
+    padding: 30px;
 }
 
 .command {
@@ -322,6 +330,7 @@ button {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
+    color: var(--primary-text-color);
 }
 
 .filter-work {
@@ -368,6 +377,7 @@ button {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    border: none;
 }
 
 .button.primary:hover,
@@ -386,6 +396,7 @@ button {
 .button.secondary:focus {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button.secondary {
@@ -393,9 +404,9 @@ button {
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border: none;
+    padding: 6px 25px;
 }
 
 /* кнопки-фильтр */
@@ -423,6 +434,10 @@ button {
     line-height: 1.19;
 }
 
+.footer-address{
+    padding-top: 20px;
+}
+
 .site-address {
     color: var(--primary-white-color);
 }
@@ -441,7 +456,6 @@ button {
 } 
 
 .address {
-    margin-top: 20px;
     margin-bottom: 9px;
 }
 
